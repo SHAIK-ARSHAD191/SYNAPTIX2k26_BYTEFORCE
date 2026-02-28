@@ -71,7 +71,7 @@ def search_jobs(query, phonenumber, country="India", api_key=JSEARCH, max_jobs=1
         bullets = random.sample(jd_lines, min(3, len(jd_lines))) if jd_lines else []
         bullets_text = "\n".join(f"• {b}" for b in bullets) if bullets else "• No description available."
 
-        # Qualifications
+        
         if not qual_list:
             qual_list = ["No qualifications listed."]
         qual_text = "\n".join(f"• {q}" for q in qual_list)
